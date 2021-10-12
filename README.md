@@ -1,8 +1,6 @@
 # Wallet tracked Buy bot
 
-BSCTokenSniper is a bot written in Python or Javascript to detect new PairCreated events in the Binance Smart Chain (when a liquidity pair has been created) and buy the token. It is quite reliable and works well.
-
-Front-running bot is a bot which it can do type of market manipulation where an entity can enter into a transaction in advance of a pending or incoming order that will or may impact the price of the order.
+Wallet tracked bot is a bot which it can do type of market manipulation where an entity can enter into a transaction in advance of a pending or incoming order from the specific wallets that will or may impact the price of the order.
 
 ## IMPORTANT NOTES BEFORE RUNNING THE BOT !!!
 
@@ -19,7 +17,7 @@ Front-running bot is a bot which it can do type of market manipulation where an 
 1) Download & Install Node.js - https://nodejs.org/en/
 
 2) Extract the bot zip / download contents to a folder, example 
-C:\users\username\Downloads\BHG-front-run-snipping-bot
+C:\users\username\Downloads\BHG-wallet-tracked-bot
 
 3) open the command prompt to install the necessary modules for the bot (it should be in the same directory it was earlier when you copy the bot)
 
@@ -35,38 +33,18 @@ $ npm start
 ```
 # Usage
 
-1) Snipping
 
-1. You have to input the information to run the snipping.
-
-```
-- wallet address, 
-- private key, 
-- token address you want to snipe (e.g: 0xe9e7cea3dedca5984780bafc599bd69add087d56),
-- Node wss url (wss://dawn-shy-voice.bsc.quiknode.pro/f929e892df..., ws://localhost:8546 in the case of full node)
-- BNB amount to buy tokens
-- Slippage (10 ~ 100 %)
-- GAS (10 ~ 50 GWEI)
-- GASLimit (160000 ~ 400000)
-
- ```
-
-2. if you complete the setting of snipping,  you can click the "Start snipping" to run the snipping bot 
-
-2) Front running
-
-1. You have to input the information to run the front running.
+1. You have to input the information to run the bot.
 
 ```
-- Min BNB to follow : Minimum bnb amount of transactions you want to front-run. (E.g. 2 BNB : front-run more than 2 BNB transactions)
+- Min BNB to follow : Minimum bnb amount of transactions you want to follow. (E.g. 2 BNB : follow more than 2 BNB transactions)
 
-- Token Memory
+- Wallet Memory
 
-Please add tokens you want to front run on the Token Memory
-
+Please add wallet address you want on the wallet memory
  ```
 
-2. if you complete the setting of Front running,  you can click the "Start FrontRun" to run the Front running bot 
+2. if you complete the setting of bot,  you can click the "Start bot" to run the bot  
 
 *** setting ***
 
