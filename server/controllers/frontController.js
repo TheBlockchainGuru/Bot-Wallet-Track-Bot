@@ -240,6 +240,10 @@ async function buy(
       throw new Error("getAmountsOut Error");
     }
 
+    const amountOutMin = amounts[1].sub(
+      amounts[1].mul(`${slippage}`).div(100),
+    )
+
     let price = amountIn / amounts[1];
 
     //Buy token via pancakeswap v2 router.
@@ -263,7 +267,7 @@ async function buy(
     const buy_tx = await router
       .swapExactTokensForTokens(
         amountIn,
-        0,
+        amountOutMin,
         [tokenIn, tokenOut],
         wallet,
         Date.now() + 1000 * 60 * 10, //10 minutes
