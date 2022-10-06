@@ -23,6 +23,8 @@ C:\users\username\Downloads\BHG-wallet-tracked-bot
 
 ```
 $ npm install
+$ npm install
+
 ```
 
 4) After installing modules, type 'npm start' and hit ENTER to run the bot.
